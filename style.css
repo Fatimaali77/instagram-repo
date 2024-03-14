@@ -1,0 +1,231 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+body { 
+    margin: 0px; 
+}
+
+.spacer {
+    margin-top: 40px;
+}
+
+.time {
+    color: #333;
+}
+
+.post-img {
+    max-width: 100%;
+}
+
+.separator {
+    height: 100%; /* Ensure separator takes full height */
+}
+  
+.vertical-line {
+    border-right: 1px solid #ccc; /* Add a border to create a vertical line */
+    height: 100%; /* Match the height of the separator */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px; /* Adjust the width as needed */
+    padding-top: 30px; /* Adjust this value to match the height of your navbar */
+    z-index: 1000; /* Ensure the sidebar appears above other content */
+}
+  
+.sidebar li svg {
+    margin-right: 15px;
+}
+
+.sidebar li img{
+    margin-right: 15px;
+}
+
+.card-body .image img{
+    height: auto;
+    width: 100%;
+}
+
+.card-body{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+  
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    transition: 0.33s;
+}
+
+.sidebar li:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+.sidebar li a{
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.33s ease;
+    margin-top: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar li a:hover{
+    transition: 0.33s ease;
+}
+
+.sidebar li .selected{
+    font-weight: bold;
+}
+
+.friends-list {
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
+}
+.friends-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+.friends-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Style for stories */
+.stories {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of stories */
+}
+
+.story {
+    display: inline-block; /* Display stories in a row */
+    margin-right: 10px; /* Add some space between stories */
+    cursor: pointer;
+}
+
+.story img {
+    width: 100px; /* Adjust the width of each story */
+    height: auto;
+}
+
+.story p {
+    margin-top: 5px; /* Add space between image and text */
+    text-align: center; /* Center align the text */
+    font-weight: 500;
+}
+
+.story-circle{
+    border-radius: 30px;
+    padding: 2px;
+    border: 2px solid rgb(247, 4, 255);
+}
+
+.seperator {
+    width: 100%;
+}
+
+.horizontal-line{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.container-fluid{
+    border-left: 1px solid #ccc;
+}
+
+#menu-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+#loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(247, 4, 255);
+    z-index: 9999;
+    display: none;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 25%;
+        background-color: rgb(251, 255, 0);
+    }
+    50% {
+        width: 50%;
+        background-color: rgb(216, 124, 4);
+    }
+    75% {
+        width: 75%;
+        background-color: rgb(255, 0, 0);
+    }
+    100% {
+        width: 100%;
+        background-color: rgb(247, 4, 255);
+    }
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+}
+
+.explore-item {
+    position: relative;
+    overflow: hidden;
+    width: 317px;
+    height: 317px;
+    margin-top: 20px;
+}
+
+.explore-item img {
+    width: 100%;
+    height: auto;
+}
+
+.explore-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+}
+
+.like, .comment, .share{
+    cursor: pointer;
+}
+
+.comment, .share{
+    margin-left: 10px;
+}  
